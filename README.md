@@ -1,4 +1,4 @@
-# Word-Translation
+# Word-Translator
 Lab for Python Dictionaries and Lists
 
 You will be writing a program that translates a single word to a new one using a given alphabet.
