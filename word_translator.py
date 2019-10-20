@@ -6,6 +6,16 @@ def createAlphabet(charEncoding):
         Output: {0: 'a', 1: 'b', 2: 'c', ... , 24: 'y', 25: 'z'}
     '''
 
+    # obtain user input
+    while (True):
+        print("Please enter 26 characters for your new alphabet")
+        print("The first character replaces 'a', and the last character replaces 'z'")
+        encoding = input()
+
+        if (len(encoding) == 26):
+            break
+        print("Not 26 characters")
+
     # declare necessary variables
     newAlphabet = {}
     engAlphabet = "abcdefghijklmnopqrstuvwxyz"
@@ -43,18 +53,9 @@ def main():
         type Enter
     '''
 
-    # obtain user input
-    print("Please enter 26 characters for your new alphabet")
-    print("The first character replaces 'a', and the last character replaces 'z'")
-    encoding = input()
-
-    if (len(encoding) != 26):
-        print("Not 26 characters")
-        return
-        
     # generate pseudo-alphabet and store into dictionary
     newAlphabet = createAlphabet(encoding)
-
+    
     # translate words until user ends program
     while (True):
         print("Enter a word to translate using the new encoding (Enter to exit)")
