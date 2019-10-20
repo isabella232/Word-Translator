@@ -6,6 +6,8 @@ def createAlphabet(charEncoding):
         Output: {0: 'a', 1: 'b', 2: 'c', ... , 24: 'y', 25: 'z'}
     '''
 
+    # obtain user input
+    
     # declare necessary variables
 
     # create the new alphabet
