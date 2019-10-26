@@ -53,6 +53,8 @@ def main():
         type Enter
     '''
 
+    encoding = input("Please enter 26 characters for your new alphabet\nThe first character replaces 'a', and the last character replaces 'z'\n")
+
     # generate pseudo-alphabet and store into dictionary
     newAlphabet = createAlphabet(encoding)
     
