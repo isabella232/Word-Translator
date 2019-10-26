@@ -1,4 +1,4 @@
-def createAlphabet(charEncoding):
+def createAlphabet():
     ''' Turns a 26 character string called charEncoding into a dictionary,
         pairing each English letter to each character
 
@@ -22,7 +22,7 @@ def createAlphabet(charEncoding):
 
     # create the new alphabet
     i = 0
-    for newChar in charEncoding:
+    for newChar in encoding:
         engChar = engAlphabet[i]
         newAlphabet[engChar] = newChar
         i += 1
@@ -52,11 +52,9 @@ def main():
         user for words to translate and prints out the translation until they
         type Enter
     '''
-
-    encoding = input("Please enter 26 characters for your new alphabet\nThe first character replaces 'a', and the last character replaces 'z'\n")
-
+    
     # generate pseudo-alphabet and store into dictionary
-    newAlphabet = createAlphabet(encoding)
+    newAlphabet = createAlphabet()
     
     # translate words until user ends program
     while (True):
